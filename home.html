@@ -4,21 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            }
+
+            .header-buttons button {
+            margin-left: 10px;
+            padding: 8px 16px;
+            font-size: 14px;
+            cursor: pointer;
+            }
+
+        h1, h2, h3 {
+            margin: 20px 0;
+        }
+        p {
+            margin: 20px;
+            line-height: 1.6;
+        }
+        form {
+            margin: 20px auto;
+            width: 50%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        form div {
+            margin-bottom: 15px;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        form input, form select, form button {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 <body>
-    <div class="container" align="topleft">
-    <button onclick="window.location.href='logIn.html'">login</button>
-    <button onclick="window.location.href='register.html'">register</button>
-    </div>
-    <br>
-    
-    <h1 align="center">
-       <img src="Iubat_logo.png" alt="IUBAT Logo" width="30" height="25"> Welcome to Iubat.online
+    <header id="header">
+  <div class="header-content">
+    <h1>
+      <img src="images/Iubat_logo.png" alt="IUBAT Logo" width="30" height="25">
+      Welcome to Iubat.online
     </h1>
-    <h2 align="center">
-        <i>International University of Business Agriculture and Technology</i>
-    </h2>
+    <div class="header-buttons">
+      <button onclick="window.location.href='logIn.html'">Login</button>
+      <button onclick="window.location.href='register.html'">Register</button>
+    </div>
+  </div>
+  <h2 align="center">
+    <i>International University of Business Agriculture and Technology</i>
+  </h2>
+</header>
 
     <h3 align="center">About Us</h3>
 
